@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+.top-pane{
+    background-color: grey;
+   
+    
+}
+.pane{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+}
+.Editor-container{
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background-color: grey;
+}
+.Container-title{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.code-mirror-wrapper{
+    flex-grow: 1;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.CodeMirror{
+    height: 100% !important;
+}
+
+.Editor-container.collapsed{
+    flex-grow: 0;
+}
+
+
+.Editor-container.collapsed .CodeMirror-scroll{
+    position: absolute;
+    overflow: hidden !important;
+}
+
+.expand-collapse-btn{
+    margin-left: .5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    
+}
