@@ -29,7 +29,7 @@ const Editor = (props) => {
     <div className={`Editor-container ${open? '':"collapsed"}`}>
       <div className='Container-title'>{displayName}
         <button onClick={()=>{
-          setOpen(o=>!o)
+          setOpen(open=>!open)
         }}
         type='button'
         className='expand-collapse-btn'
